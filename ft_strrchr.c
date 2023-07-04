@@ -6,11 +6,11 @@
 /*   By: rgacho <rgacho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 13:57:51 by rgacho            #+#    #+#             */
-/*   Updated: 2023/07/04 14:10:40 by rgacho           ###   ########.fr       */
+/*   Updated: 2023/07/04 15:55:44 by rgacho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char *ft_strrchr(const char *s, int c) {
     int len = ft_strlen(s);

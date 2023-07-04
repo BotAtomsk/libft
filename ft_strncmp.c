@@ -6,11 +6,11 @@
 /*   By: rgacho <rgacho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 14:18:10 by rgacho            #+#    #+#             */
-/*   Updated: 2023/07/04 14:25:16 by rgacho           ###   ########.fr       */
+/*   Updated: 2023/07/04 16:28:51 by rgacho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int strncmp(const char *s1, const char *s2, size_t n) {
     while (n > 0) {
@@ -22,4 +22,5 @@ int strncmp(const char *s1, const char *s2, size_t n) {
         s2++;
         n--;    
     }
+    return (0);
 }
