@@ -1,23 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rgacho <rgacho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/04 12:49:45 by rgacho            #+#    #+#             */
-/*   Updated: 2023/07/25 13:28:14 by rgacho           ###   ########.fr       */
+/*   Created: 2023/07/25 12:12:59 by rgacho            #+#    #+#             */
+/*   Updated: 2023/07/25 13:19:05 by rgacho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
-size_t ft_strlen(const char *s) {
-	size_t count;
+int ft_atoi(const char *str) {
+	int	n;
+	int negative;
 
-	count = 0;
-	while (s[count])
-		count++;
-	return count;
+	n = 0;
+	negative = 0;
+	while (ft_isspace(*str))
+		str++;
+	if (*str == '+' || *str == '-')
+	{
+		if (*str == '-')
+			negative = 1;
+		str++;
+	}
+	while (*str >= '0' && *str <= '9')
+		n = *str++ - '0' + n * 10;
+	if (negative == 1)
+		return (-n);
+	return (n);
 }
