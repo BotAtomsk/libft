@@ -6,15 +6,16 @@
 /*   By: rgacho <rgacho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/25 12:12:59 by rgacho            #+#    #+#             */
-/*   Updated: 2023/07/25 13:19:05 by rgacho           ###   ########.fr       */
+/*   Updated: 2023/07/29 15:08:37 by rgacho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_atoi(const char *str) {
+int	ft_atoi(const char *str)
+{
 	int	n;
-	int negative;
+	int	negative;
 
 	n = 0;
 	negative = 0;

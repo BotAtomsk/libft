@@ -6,18 +6,21 @@
 /*   By: rgacho <rgacho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 13:53:05 by rgacho            #+#    #+#             */
-/*   Updated: 2023/07/25 13:18:50 by rgacho           ###   ########.fr       */
+/*   Updated: 2023/07/29 16:32:21 by rgacho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c) {
-	while (*s != '\0') {
+char	*ft_strchr(const char *s, int c)
+{
+	while (*s)
+	{
 		if (*s == (char) c)
 			return ((char *) s);
 		s++;
 	}
+	if (*s == (char) c)
+		return ((char *) s);
 	return (NULL);
 }

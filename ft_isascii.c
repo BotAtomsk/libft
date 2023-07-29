@@ -6,14 +6,15 @@
 /*   By: rgacho <rgacho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 12:49:27 by rgacho            #+#    #+#             */
-/*   Updated: 2023/07/04 12:49:28 by rgacho           ###   ########.fr       */
+/*   Updated: 2023/07/29 15:12:21 by rgacho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c) {
+int	ft_isascii(int c)
+{
 	if (c >= 0 && c <= 127)
-		return 1;
-	return 0;
+		return (1);
+	return (0);
 }

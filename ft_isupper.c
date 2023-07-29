@@ -6,14 +6,15 @@
 /*   By: rgacho <rgacho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 12:49:36 by rgacho            #+#    #+#             */
-/*   Updated: 2023/07/04 12:49:37 by rgacho           ###   ########.fr       */
+/*   Updated: 2023/07/29 15:13:12 by rgacho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isupper(int c) {
+int	ft_isupper(int c)
+{
 	if (c >= 65 && c <= 90)
-		return 1;
-	return 0;
+		return (1);
+	return (0);
 }

@@ -6,17 +6,15 @@
 /*   By: rgacho <rgacho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 13:51:48 by rgacho            #+#    #+#             */
-/*   Updated: 2023/07/25 13:27:58 by rgacho           ###   ########.fr       */
+/*   Updated: 2023/07/29 15:45:21 by rgacho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c) {
-	if (c >= 97 && c <= 122){
+int	ft_toupper(int c)
+{
+	if (c >= 97 && c <= 122)
 		c = c - 32;
-		return c;
-	} else if ((c >= 65 && c <= 90) || !(c >= 97 && c <= 122) || !(c >= 48 && c <= 57)) {
-		return c;
-	}
+	return (c);
 }

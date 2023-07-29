@@ -6,16 +6,19 @@
 /*   By: rgacho <rgacho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 13:57:51 by rgacho            #+#    #+#             */
-/*   Updated: 2023/07/25 13:28:05 by rgacho           ###   ########.fr       */
+/*   Updated: 2023/07/29 15:44:37 by rgacho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c) {
-	int len = ft_strlen(s);
+char	*ft_strrchr(const char *s, int c)
+{
+	int	len;
 
-	while (len >= 0) {
+	len = ft_strlen(s);
+	while (len >= 0)
+	{
 		if (s[len] == (char) c)
 			return ((char *) &s[len]);
 		len--;

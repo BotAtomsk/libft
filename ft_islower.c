@@ -6,14 +6,15 @@
 /*   By: rgacho <rgacho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 12:49:05 by rgacho            #+#    #+#             */
-/*   Updated: 2023/07/04 12:49:06 by rgacho           ###   ########.fr       */
+/*   Updated: 2023/07/29 15:12:35 by rgacho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_islower(int c) {
+int	ft_islower(int c)
+{
 	if (c >= 97 && c <= 122)
-		return 1;
-	return 0;
+		return (1);
+	return (0);
 }
