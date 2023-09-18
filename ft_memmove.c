@@ -6,7 +6,7 @@
 /*   By: rgacho <rgacho@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/04 12:49:40 by rgacho            #+#    #+#             */
-/*   Updated: 2023/07/29 15:30:48 by rgacho           ###   ########.fr       */
+/*   Updated: 2023/09/18 17:14:32 by rgacho           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	destino = dst;
 	origen = src;
 	i = len;
-	destino = dst;
-	origen = src;
 	if (dst < src)
 	{
 		while (len--)
